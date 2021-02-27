@@ -155,22 +155,6 @@ $(window).resize(function(){
 })
 
 
-// $(window).on("load", function(){
-//   console.log('load');
-
-//   //hide loading animation
-//   $('.loading').hide();
-
-//   //show canvas
-//   $('#canvas').css('display', 'block');
-//   $('#canvas').show();
-
-//   //show buttons
-//   $('.buttons').css('display', 'flex');
-//   $('.buttons').show();
-// })
-
-
 
 
 
