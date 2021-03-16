@@ -36,7 +36,16 @@ async function loadModel() {
   model = undefined; 
   model = await tf.loadLayersModel("model/model.json");
   
-  console.log("loadModel")
+  console.log("loadModel");
+  $('.loading').hide();
+
+  //show canvas
+  $('#canvas').css('display', 'block');
+  $('#canvas').show();
+
+  //show buttons
+  $('.buttons').css('display', 'flex');
+  $('.buttons').show();
 }
 
 function setCanvas(){
