@@ -11,7 +11,9 @@ else{
 let ctx = canvas.getContext("2d");
 ctx.fillRect(0, 0 ,canvas.width, canvas.height);
 
-
+$(document).ready(() => {
+  console.log("ready")
+})
 
 let cfg = {
 	mode:1,
@@ -33,6 +35,8 @@ let cfg = {
 async function loadModel() {
   model = undefined; 
   model = await tf.loadLayersModel("model/model.json");
+  
+  console.log("loadModel")
 }
 
 function setCanvas(){
